@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./script/script.js" defer></script>
+        <title>GREEN THUMB LANDSCAPING</title>
+    </head>
+    
+
+<body onclick="closeMenu();">
+    <header>
+        <!-- Navigation bar inside header -->
+        <nav class="topnav">
+            <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
+           <div class="topNavContainer">
+                <!-- Green Thumb Logo goes here: -->
+                <div class="logo">
+                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo">
+                </div>
+                <div class="companyName">
+                    <span>Green Thumb Landscaping</span>
+                </div>
+            <!-- Hamburguer Menu to be displayed only when width < 800px -->
+                <div class="hamburguerMenu" id="hamburguerMenu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+                        
+                    <div id="menu">
+                        <div id="closebtn" onclick="closeMenu(); event.stopPropagation();">&times;</div>
+                        <ul id="menuList">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="aboutUs.html"><li>About Us</li></a>
+                            <a href="onlineEstimate.html"><li>Online Estimate</li></a>
+                            <a href="services.html"><li>Services</li></a>
+                            <a href="testimonials.html"><li>Testimonials</li></a>
+                            <a href="contact.html"><li>Contact Us</li></a>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navigation bar only visible when width > 800px -->
+                <div class="navigation">
+                    <div class="navbutton"><a href="index.html">Home</div></a>
+                    <div class="navbutton"><a href="aboutUs.html">About Us</div></a>
+                    <div class="navbutton"><a href="onlineEstimate.html">Online Estimate</div></a>
+                    <div class="navbutton"><a href="services.html">Services</div></a>
+                    <div class="navbutton"><a href="testimonials.html">Testimonials</div></a>
+                    <div class="navbutton"><a href="contact.html">Contact Us</div></a>
+                </div>
+                <div class="companyName2">
+                    <span>Green Thumb Landscaping</span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>OUR SERVICES</h1>
+        
+        <h2>Doing the Job Right</h2>
+        <p>Green Thumb Landscaping specializes in unique landscape projects from start to finish. Our goal is to provide
+            our
+            customers with landscapes that stand the test of time. Gardens and yards that are maintainable,
+            aesthetically pleasing and
+            healthy.</p>
+        <p>From the consultation to the planning, design and installation, we pride ourselves on doing the job right.
+        </p>
+        <p>“John and his crew were very easy to work with and built us a fantastic new deck and hot tub. We love it!
+            During
+            the design & build phase John was open to new design ideas to incorporate into his plan and always took the
+            time to
+            answer my many questions. His crew was always polite and cleaned up the site each day before they left. I
+            highly recommend them
+            if you are considering a new deck for your home.”<br>— Liz O'Brien</p>
+        <p>The state of your landscape speaks volumes about your property. And we get that. We provide professional lawn
+            and tree care
+            services that are convenient for you and we are committed to keeping things healthy and well-maintained.</p>
+        <p>RESIDENTIAL SERVICES </p>
+        <ul>
+            <li>Landscape Maintenance</li>
+            <li>Treatment & fertilization</li>
+            <li>Lawn Thatching/ clean up</li>
+            <li>Grass cutting</li>
+            <li>Mulching</li>
+            <li>Seeding</li>
+            <li>Aeration</li>
+            <li>Tree-health inspections</li>
+            <li>Tree trimming</li>
+            <li>Shrub pruning</li>
+            <li>Weed management</li>
+            <li>Tree removal</li>
+            <li>Landscape Construction</li>
+            <li>Decking & fencing</li>
+            <li>Retaining walls</li>
+            <li>Brick paving & pavers</li>
+            <li>Patios & pergolas</li>
+            <li>Water features & ponds</li>
+            <li>Planting trees & shrubs</li>
+            <li>Artificial grass/ Astroturf</li>
+            <li>Outdoor lighting/ heating & firepits</li>
+            <li>Lawn/ sod installation</li>
+        </ul>
+    </main>
+    <footer>
+        <div><span>@2022 by: <br>Willian P. Munhoz <br> Gabriel C. Zacharias</span></div>
+    </footer>   
+</body>
+
+</html>

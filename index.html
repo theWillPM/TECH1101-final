@@ -1,0 +1,77 @@
+<!------------------------------------------------------
+    @Authors: Willian P. Munhoz, Gabriel C. Zacharias
+    @GitHubs: /theWillPM and  /gaconza
+    @Title: TECH1101_WebFundamentals_FinalProject
+    @Date: December 14, 2022
+    @Institution: Bow Valley College
+    @Instructor: Joseph "Joe" Wilson
+-------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js" defer></script>
+    <title>GREEN THUMB LANDSCAPING</title>
+</head>
+
+<body onclick="closeMenu();">
+    <header>
+        <!-- Navigation bar inside header -->
+        <nav class="topnav">
+            <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
+           <div class="topNavContainer">
+                <!-- Green Thumb Logo goes here: -->
+                <div class="logo">
+                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo">
+                </div>
+                <div class="companyName">
+                    <span>Green Thumb Landscaping</span>
+                </div>
+            <!-- Hamburguer Menu to be displayed only when width < 800px -->
+                <div class="hamburguerMenu" id="hamburguerMenu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+                        
+                    <div id="menu">
+                        <div id="closebtn" onclick="closeMenu(); event.stopPropagation();">&times;</div>
+                        <ul id="menuList">
+                            <a href="index.html"><li>Home</li></a>
+                            <a href="aboutUs.html"><li>About Us</li></a>
+                            <a href="onlineEstimate.html"><li>Online Estimate</li></a>
+                            <a href="services.html"><li>Services</li></a>
+                            <a href="testimonials.html"><li>Testimonials</li></a>
+                            <a href="contact.html"><li>Contact Us</li></a>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navigation bar only visible when width > 800px -->
+                <div class="navigation">
+                    <div class="navbutton"><a href="index.html">Home</div></a>
+                    <div class="navbutton"><a href="aboutUs.html">About Us</div></a>
+                    <div class="navbutton"><a href="onlineEstimate.html">Online Estimate</div></a>
+                    <div class="navbutton"><a href="services.html">Services</div></a>
+                    <div class="navbutton"><a href="testimonials.html">Testimonials</div></a>
+                    <div class="navbutton"><a href="contact.html">Contact Us</div></a>
+                </div>
+                <div class="companyName2">
+                    <span>Green Thumb Landscaping</span>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class = "effectPhrase">
+            <h1>Green Thumb Landscaping</h1>
+            <h2>Make a green impression.</h2>
+        </div>
+    </main>
+    <footer>
+        <div><span>@2022 by <br>Willian P. Munhoz <br> Gabriel C. Zacharias</span></div>
+    </footer>    
+</body>
+
+</html>

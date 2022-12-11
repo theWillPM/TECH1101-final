@@ -1,0 +1,243 @@
+/* This is the main CSS file to work on all pages
+Any page-specific changes should be made in a separate CSS file 
+*/
+:root {
+    --main_Dark: #074900;
+    --main_Medium: #228817;
+    --main_Light: #5cbd52;
+    --secondary_Dark: #595800;
+    --secondary_Medium: #a7a51c;
+    --secondary_Light: #e6e564;
+    --tertiary_Dark: #3a5300;
+    --tertiary_Medium: #749c1b;
+    --tertiary_Light: #e3f6d5;
+    --acqua: #08fdf9;
+}
+
+* {
+    overflow-x: hidden;
+}
+
+p {
+    padding: 0 10px 0 0;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: var(--tertiary_Light);
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    transition: 0.4s;
+    color: var(--tertiary_Light);
+    text-shadow: -1px 0 var(--main_Dark), 0 1px var(--main_Dark), 1px 0 var(--main_Dark), 0 -1px var(--main_Dark);
+    text-underline-offset: 3px;
+    text-decoration-color: var(--main_Dark);
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(0deg, white, var(--tertiary_Light));
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+    flex: 1;
+}
+
+.topNavContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    padding: 15px 0 15px 0;
+    gap: 10px;
+    background-image: linear-gradient(90deg, var(--main_Dark), var(--main_Light));
+    justify-content: space-between;
+    border-bottom: 2px solid var(--main_Dark);
+}
+.logo {
+    justify-content: flex-start;
+    margin-left: 5vw;
+    width: 50x;
+    display: flex;
+    cursor: pointer;
+}
+
+.logo img {
+    align-self: flex-start;
+    height: 60px;
+}
+
+.companyName, .companyName2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    max-width: 200px;
+}
+
+.companyName2 {
+    margin-right: 5vw;
+    text-align: right;
+
+}
+
+.companyName span, .companyName2 span {
+    color: var(--tertiary_Light);
+    font-family: "Courier";
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+.navigation {
+    gap: 20px;
+}
+
+.navbutton {
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    min-width: 100vw;
+    min-height: calc(100vh - 144px);
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+
+.effectPhrase {
+    text-align: center;
+    background-image: linear-gradient(0deg, var(--main_Light), var(--tertiary_Light));
+}
+
+footer {
+    display: flex;
+    color: var(--tertiary_Light);
+    height: 60px;
+    background-image: linear-gradient(var(--main_Light), var(--main_Dark));
+    border-top: 1px solid var(--main_Dark);
+    bottom: 0;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+    * {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+    }
+
+    .hamburguerMenu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-right: 5vw;
+        width: 33px;
+        color: var(--tertiary_Light);
+        font-size: 3em;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    #menu {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        top: 0;
+        right: 0;
+        list-style-type: none;
+        background-image: linear-gradient(60deg, var(--main_Dark), var(--main_Light));
+        padding-top: 50px;
+        transition: 0.5s ease-out;
+        overflow-x: hidden;
+        border-bottom-left-radius: 20px;
+        border-left: 2px solid var(--main_Dark);
+        border-bottom: 2px solid var(--main_Dark);
+    }
+
+    #menu ul {
+        padding: 5px 30px 10px 10px;
+        text-align: right;
+        line-height: 2;
+    }
+
+    #menu li {
+        list-style: none;
+        font-size: 1.6em;
+    }
+
+    #closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 4em;
+      }
+      #closebtn:hover {
+        text-decoration: none;
+        transition: 0.6s;
+        color: var(--main_Dark);
+      }
+
+    .navigation {
+        display: none;
+    }
+
+    .companyName {
+        display: flex;
+    }
+
+    .companyName2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    * {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+    }
+
+    .hamburguerMenu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .companyName {
+        display: none;
+    }
+
+    .companyName2 {
+        display: flex;
+    }
+}
