@@ -7,7 +7,7 @@ Any page-specific changes should be made in a separate CSS file
     --main_Light: #85e77a;
     --secondary_Dark: #595800;
     --secondary_Medium: #a7a51c;
-    --secondary_Light: #e6e6ae;
+    --secondary_Light: #dada9e;
     --tertiary_Dark: #3a5300;
     --tertiary_Medium: #749c1b;
     --tertiary_Light: #e3f6d5;
@@ -46,7 +46,6 @@ a:hover:not(.comapnyName,.company-name-right) {
 body {
     margin: 0;
     height: 100vh;
-    background-image: linear-gradient (var(--secondary_Light), white);
 }
 
 .header {
@@ -113,10 +112,11 @@ body {
 }
 
 main {
+    background-image: linear-gradient(white, var(--tertiary_Light));
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     min-width: 100vw;
     min-height: calc(100vh - 144px);
     box-sizing: border-box;
@@ -170,6 +170,23 @@ h2 {
     width: 600px;
 }
 
+.hidden-price {
+    display: none;
+}
+
+.plus-materials {
+    font-size: 0.8em;
+    color: gray;
+}
+
+.google-map {
+    width: 90vw;
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px solid black;
+    background-color: var(--main_Light);
+    margin-bottom: 20px;
+}
 footer {
     display: flex;
     color: var(--tertiary_Light);
@@ -182,26 +199,20 @@ footer {
     justify-content: flex-start;
 }
 
-.google-map {
-    width: 90vw;
-    min-width: 300px;
-    min-height: 300px;
-    border: 1px solid black;
-    background-color: var(--main_Light);
-    margin-bottom: 20px;
-}
-
 footer span {
     padding-left: 10px;
     font-size: 0.8em;
 }
 
 
-#onlineEstimate {
+#online-estimate {
     display: flex;
     border: none;
     border-spacing: 0;
+    max-width: 95vw;
 }
+
+
 
 tr, th, td {
     border: 1px solid;
@@ -209,11 +220,11 @@ tr, th, td {
     background-color: rgb(245, 245, 245 );
 }
 
-.userInput {
+.user-input-quantity {
     max-width: 108px;
 }
 
-.userInput input {
+.user-input-quantity input {
     max-width: 100px;
 }
 
