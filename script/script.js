@@ -1,4 +1,4 @@
-let hamburguerMenuIcon = document.getElementById("hamburguerMenu");
+let hamburguerMenuIcon = document.getElementById("hamburguer-menu");
 let hamburguerMenuContent = document.getElementById("menu");
 
 function openHamburguerMenu() {

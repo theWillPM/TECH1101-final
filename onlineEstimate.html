@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/alternative_style.css">
         <script src="./script/script.js" defer></script>
         <title>GREEN THUMB LANDSCAPING</title>
     </head>
@@ -14,22 +15,22 @@
 <body onclick="closeMenu();">
     <header>
         <!-- Navigation bar inside header -->
-        <nav class="topnav">
+        <nav class="top-navigation-bar">
             <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
-           <div class="topNavContainer">
+           <div class="top-navigation-container">
                 <!-- Green Thumb Logo goes here: -->
-                <div class="logo">
-                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo">
+                <div class="logo"><a href="index.html">
+                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo"></a>
                 </div>
-                <div class="companyName">
+                <a href="index.html"><div class=company-name-left>
                     <span>Green Thumb Landscaping</span>
-                </div>
+                </div></a>
             <!-- Hamburguer Menu to be displayed only when width < 800px -->
-                <div class="hamburguerMenu" id="hamburguerMenu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+                <div class="hamburguer-menu" id="hamburguer-menu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
                         
                     <div id="menu">
-                        <div id="closebtn" onclick="closeMenu(); event.stopPropagation();">&times;</div>
-                        <ul id="menuList">
+                        <div id="close-menu-button" onclick="closeMenu(); event.stopPropagation();">&times;</div>
+                        <ul id="menu-list-of-items">
                             <a href="index.html"><li>Home</li></a>
                             <a href="aboutUs.html"><li>About Us</li></a>
                             <a href="onlineEstimate.html"><li>Online Estimate</li></a>
@@ -49,9 +50,9 @@
                     <div class="navbutton"><a href="testimonials.html">Testimonials</div></a>
                     <div class="navbutton"><a href="contact.html">Contact Us</div></a>
                 </div>
-                <div class="companyName2">
+                <a href="index.html" class="company-name-right">
                     <span>Green Thumb Landscaping</span>
-                </div>
+                </a>
             </div>
 
         </nav>
@@ -68,126 +69,155 @@
         <p>Based off an average yard size of 10000 Square Feet, choose what you need done weekly, monthly or just one
             time!</p>
 
-        <table>
+        <table id="onlineEstimate">
             <tr>
-                <td>Services</td>
-                <td>Cost</td>
-                <td>Desired amount</td>
+                <th>Services</th>
+                <th>Cost</th>
+                <th>Desired amount</th>
+                <th>Subtotal</th>
             </tr>
             <tr>
-                <td>Landscape Maintenance (pruning / weed removal)</td>
-                <td>10 $/hr</td>
+                <td class="serviceName">Landscape Maintenance (pruning / weed removal)</td>
+                <td class="priceDescription">10 $/hr</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Treatment & fertilization</td>
+                <td class="priceDescription">0.003 $ / Square Foot (typically 3x / year)</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Lawn Thatching / clean up</td>
+                <td class="priceDescription">0.004 $ / Square Foot (typically done weekly)</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Grass cutting</td>
+                <td class="priceDescription">0.004 $ / Square Foot (typically 1x / year)</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Mulching</td>
+                <td class="priceDescription">additional 0.001 $ / Square Foot</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Seeding</td>
+                <td class="priceDescription">.007 $ / Square Foot</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Aeration</td>
+                <td class="priceDescription">0.003 $ / Square Foot (typically 1x / year)</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Tree-health inspections</td>
+                <td class="priceDescription">5 $ / Tree</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Tree trimming</td>
+                <td class="priceDescription">40 $ / Tree</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Shrub pruning</td>
+                <td class="priceDescription">10 $ / Hr</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Weed management</td>
+                <td class="priceDescription">10 $ / Hr</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Tree removal</td>
+                <td class="priceDescription">40 $ / Hr</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Landscape Construction</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Decking & fencing</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Retaining walls</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Brick paving & pavers</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Patios & pergolas</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Water features & ponds</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Planting trees & shrubs</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Artificial grass / Astroturf</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Outdoor lighting / heating & firepits</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <td class="serviceName">Lawn / sod installation</td>
+                <td class="priceDescription">40 $ / Hr + Materials</td>
+                <td class="userInput"><input type="number" placeholder="0"></td>
+                <td class="subtotal"></td>
+            </tr>
+            <tr>
+                <th class="subtotal" id="total" colspan="3">TOTAL ESTIMATE: </th>
                 <td></td>
             </tr>
-            <tr>
-                <td>Treatment & fertilizatio</td>
-                <td>0.003 $ / Square Foot (typically 3x / year)</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Lawn Thatching / clean up</td>
-                <td>0.004 $ / Square Foot (typically done weekly)</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Grass cutting</td>
-                <td>0.004 $ / Square Foot (typically 1x / year)</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Mulching</td>
-                <td>additional 0.001 $ / Square Foot</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Seeding</td>
-                <td>.007 $ / Square Foot</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Aeration</td>
-                <td>0.003 $ / Square Foot (typically 1x / year)</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tree-health inspections</td>
-                <td>5 $ / Tree</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tree trimming</td>
-                <td>40 $ / Tree</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Shrub pruning</td>
-                <td>10 $ / Hr</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Weed management</td>
-                <td>10 $ / Hr</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tree removal</td>
-                <td>40 $ / Hr</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Landscape Construction</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Decking & fencing</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Retaining walls</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Brick paving & pavers</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Patios & pergolas</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Water features & ponds</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Planting trees & shrubs</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Artificial grass / Astroturf</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Outdoor lighting / heating & firepits</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Lawn / sod installation</td>
-                <td>40 $ / Hr + Materials</td>
-                <td></td>
-            </tr>
-
 
         </table>
     </main>
+    <footer>
+        <div class="authors"><span>@2022 by: </span><span>Willian P. Munhoz</span> <span>Gabriel C. Zacharias</span></div>
+    </footer>    
 </body>
 
 </html>

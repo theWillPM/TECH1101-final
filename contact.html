@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/alternative_style.css">
         <script src="./script/script.js" defer></script>
         <title>GREEN THUMB LANDSCAPING</title>
     </head>
@@ -14,22 +15,22 @@
 <body onclick="closeMenu();">
     <header>
         <!-- Navigation bar inside header -->
-        <nav class="topnav">
+        <nav class="top-navigation-bar">
             <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
-           <div class="topNavContainer">
+           <div class="top-navigation-container">
                 <!-- Green Thumb Logo goes here: -->
-                <div class="logo">
-                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo">
+                <div class="logo"><a href="index.html">
+                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo"></a>
                 </div>
-                <div class="companyName">
+                <a href="index.html"><div class=company-name-left>
                     <span>Green Thumb Landscaping</span>
-                </div>
+                </div></a>
             <!-- Hamburguer Menu to be displayed only when width < 800px -->
-                <div class="hamburguerMenu" id="hamburguerMenu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+                <div class="hamburguer-menu" id="hamburguer-menu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
                         
                     <div id="menu">
-                        <div id="closebtn" onclick="closeMenu(); event.stopPropagation();">&times;</div>
-                        <ul id="menuList">
+                        <div id="close-menu-button" onclick="closeMenu(); event.stopPropagation();">&times;</div>
+                        <ul id="menu-list-of-items">
                             <a href="index.html"><li>Home</li></a>
                             <a href="aboutUs.html"><li>About Us</li></a>
                             <a href="onlineEstimate.html"><li>Online Estimate</li></a>
@@ -49,15 +50,16 @@
                     <div class="navbutton"><a href="testimonials.html">Testimonials</div></a>
                     <div class="navbutton"><a href="contact.html">Contact Us</div></a>
                 </div>
-                <div class="companyName2">
+                <a href="index.html" class="company-name-right">
                     <span>Green Thumb Landscaping</span>
-                </div>
+                </a>
             </div>
 
         </nav>
     </header>
 
     <main>
+        <div class="contact-text">
         <h1>CONTACT US</h1>
 
         <p>And don’t worry about it.</p>
@@ -69,10 +71,12 @@
             Edmonton AB T5M 2N0 <br>
             info@greenthumblanscaping.com<br>
             780.302.0635</p>
+        </div>
+        <div class="google-map">GOOGLE MAP GOES HERE</div>
     </main>
     <footer>
-        <div><span>@2022 by: <br>Willian P. Munhoz <br> Gabriel C. Zacharias</span></div>
-    </footer>   
+        <div class="authors"><span>@2022 by: </span><span>Willian P. Munhoz</span> <span>Gabriel C. Zacharias</span></div>
+    </footer>     
 </body>
 
 </html>

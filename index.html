@@ -21,22 +21,22 @@
 <body onclick="closeMenu();">
     <header>
         <!-- Navigation bar inside header -->
-        <nav class="topnav">
+        <nav class="top-navigation-bar">
             <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
-           <div class="topNavContainer">
+           <div class="top-navigation-container">
                 <!-- Green Thumb Logo goes here: -->
-                <div class="logo">
-                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo">
+                <div class="logo"><a href="index.html">
+                    <img src="./img/Logo.png" alt="GreenThumbLandscaping logo"></a>
                 </div>
-                <div class="companyName">
+                <a href="index.html"><div class=company-name-left>
                     <span>Green Thumb Landscaping</span>
-                </div>
+                </div></a>
             <!-- Hamburguer Menu to be displayed only when width < 800px -->
-                <div class="hamburguerMenu" id="hamburguerMenu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+                <div class="hamburguer-menu" id="hamburguer-menu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
                         
                     <div id="menu">
-                        <div id="closebtn" onclick="closeMenu(); event.stopPropagation();">&times;</div>
-                        <ul id="menuList">
+                        <div id="close-menu-button" onclick="closeMenu(); event.stopPropagation();">&times;</div>
+                        <ul id="menu-list-of-items">
                             <a href="index.html"><li>Home</li></a>
                             <a href="aboutUs.html"><li>About Us</li></a>
                             <a href="onlineEstimate.html"><li>Online Estimate</li></a>
@@ -56,7 +56,7 @@
                     <div class="navbutton"><a href="testimonials.html">Testimonials</div></a>
                     <div class="navbutton"><a href="contact.html">Contact Us</div></a>
                 </div>
-                <div class="companyName2">
+                <div class="company-name-right">
                     <span>Green Thumb Landscaping</span>
                 </div>
             </div>
@@ -64,13 +64,25 @@
         </nav>
     </header>
     <main>
-        <div class = "effectPhrase">
-            <h1>Green Thumb Landscaping</h1>
-            <h2>Make a green impression.</h2>
+        <div class="picture-sidescroller">
+            <div class = "welcoming-phrase">
+                <h1>Green Thumb Landscaping</h1>
+            </div>
+            <div class="images-container">
+                <img src="./img/mowing_lawn_2.jpg" alt="">
+                <img src="./img/mowed_lawn.jpg" alt="">
+                <img src="./img/laying_sod_3.jpg" alt="">
+                <img src="./img/pruning_tree.jpg" alt="">
+                <img src="./img/wheelbarow_backyard_2.jpg" alt="">
+            </div>
+            <div class = "welcoming-phrase">
+                <h2>Leaving our Green Mark in the World</h2>
+            </div>
         </div>
+
     </main>
     <footer>
-        <div><span>@2022 by <br>Willian P. Munhoz <br> Gabriel C. Zacharias</span></div>
+        <div class="authors"><span>@2022 by: </span><span>Willian P. Munhoz</span> <span>Gabriel C. Zacharias</span></div>
     </footer>    
 </body>
 
