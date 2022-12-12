@@ -11,7 +11,7 @@ function update(val, i){
     val.addEventListener('input', function(){
         var x = val.value;
         let subtotal = (x*document.getElementsByClassName('price-description')[i].getAttribute("data-amount")).toFixed(2); 
-    priceArray[i].innerHTML = subtotal;
+    priceArray[i].innerHTML = "$" + subtotal;
         updateTotal();
     });
   };
@@ -19,8 +19,8 @@ function update(val, i){
 function updateTotal () {  
     totalPrice = 0;
   priceArray.forEach(element => {
-    totalPrice += parseFloat(element.innerHTML);
-    document.getElementById('total').innerHTML =  "$" + totalPrice;
+    totalPrice += parseFloat(element.innerHTML.slice(1));
+    document.getElementById('total').innerHTML =  "$" + totalPrice.toFixed(2);
 });   
 }
 
