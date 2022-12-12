@@ -63,17 +63,18 @@ body {
     height: 50px;
     width: 100vw;
     padding: 15px 0 15px 0;
-    gap: 10px;
+    gap: 12px;
     background-image: linear-gradient(90deg, var(--main_Dark), var(--main_Light));
     justify-content: space-between;
     border-bottom: 2px solid var(--main_Dark);
 }
 .logo {
     justify-content: flex-start;
-    margin-left: 5vw;
-    width: 50x;
+    margin-left: calc(5px + 1vw);
+    min-width: 60px;
     display: flex;
     cursor: pointer;
+    z-index: 10;
 }
 
 .logo img {
@@ -91,7 +92,7 @@ body {
 }
 
 .company-name-right {
-    margin-right: 5vw;
+    margin-right: calc(5px + 1vw);
     text-align: right;
 
 }
@@ -100,7 +101,7 @@ body {
     color: var(--tertiary_Light);
     font-family: "Courier";
     font-weight: 700;
-    font-size: 1.75em;
+    font-size: clamp(1.6rem, 2.5vw, 1.8rem);
 }
 
 .navigation {
@@ -109,6 +110,7 @@ body {
 
 .navbutton {
     color: white;
+    font-size: clamp(0.8rem, 1.6vw, 1.2rem);
 }
 
 main {
@@ -211,8 +213,6 @@ footer span {
     border-spacing: 0;
     max-width: 95vw;
 }
-
-
 
 tr, th, td {
     border: 1px solid;
