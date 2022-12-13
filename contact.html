@@ -1,41 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/alternative_style.css">
-        <script src="./script/script.js" defer></script>
-        <title>GREEN THUMB LANDSCAPING</title>
-    </head>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/alternative_style.css">
+    <script src="./script/script.js" defer></script>
+    <title>GREEN THUMB LANDSCAPING</title>
+</head>
+
 
 <body onclick="closeMenu();">
     <header>
         <!-- Navigation bar inside header -->
         <nav class="top-navigation-bar">
             <!-- Starting with mobile we have: solid background, Logo on left, hamburguer menu on the right -->
-           <div class="top-navigation-container">
+            <div class="top-navigation-container">
                 <!-- Green Thumb Logo goes here: -->
                 <a href="index.html" class="logo">
                     <img src="./img/Logo.png" alt="GreenThumbLandscaping logo"></a>
-                <a href="index.html"><div class=company-name-left>
-                    <span>Green Thumb Landscaping</span>
-                </div></a>
-            <!-- Hamburguer Menu to be displayed only when width < 800px -->
-                <div class="hamburguer-menu" id="hamburguer-menu" onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
-                        
+                <a href="index.html">
+                    <div class=company-name-left>
+                        <span>Green Thumb Landscaping</span>
+                    </div>
+                </a>
+                <!-- Hamburguer Menu to be displayed only when width < 800px -->
+                <div class="hamburguer-menu" id="hamburguer-menu"
+                    onclick="openHamburguerMenu(); event.stopPropagation();">&#9776
+
                     <div id="menu">
                         <div id="close-menu-button" onclick="closeMenu(); event.stopPropagation();">&times;</div>
                         <ul id="menu-list-of-items">
-                            <a href="index.html"><li>Home</li></a>
-                            <a href="aboutUs.html"><li>About Us</li></a>
-                            <a href="onlineEstimate.html"><li>Online Estimate</li></a>
-                            <a href="services.html"><li>Services</li></a>
-                            <a href="testimonials.html"><li>Testimonials</li></a>
-                            <a href="contact.html"><li>Contact Us</li></a>
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="aboutUs.html">
+                                <li>About Us</li>
+                            </a>
+                            <a href="onlineEstimate.html">
+                                <li>Online Estimate</li>
+                            </a>
+                            <a href="services.html">
+                                <li>Services</li>
+                            </a>
+                            <a href="testimonials.html">
+                                <li>Testimonials</li>
+                            </a>
+                            <a href="contact.html">
+                                <li>Contact Us</li>
+                            </a>
                         </ul>
                     </div>
                 </div>
@@ -59,17 +74,17 @@
 
     <main>
         <div class="contact-text">
-        <h1>CONTACT US</h1>
+            <h1>CONTACT US</h1>
 
-        <p>And don’t worry about it.</p>
-        <p>At every stage of every project we take on, we believe communication is key.</p>
-        <p>So whether you have a question about our services or you’d like a quote, send us a note to discuss the
-            details. It’s always no-obligation, so don’t worry about it!</p>
-        <p>It all begins with an idea…<br>
-            22 1139 ave NW<br>
-            Edmonton AB T5M 2N0 <br>
-            info@greenthumblanscaping.com<br>
-            780.302.0635</p>
+            <p>And don’t worry about it.</p>
+            <p>At every stage of every project we take on, we believe communication is key.</p>
+            <p>So whether you have a question about our services or you’d like a quote, send us a note to discuss the
+                details. It’s always no-obligation, so don’t worry about it!</p>
+            <p>It all begins with an idea…<br>
+                22 1139 ave NW<br>
+                Edmonton AB T5M 2N0 <br>
+                info@greenthumblanscaping.com<br>
+                780.302.0635</p>
         </div>
         <div class="google-map">
             <iframe
@@ -79,8 +94,9 @@
         </div>
     </main>
     <footer>
-        <div class="authors"><span>@2022 by: </span><span>Willian P. Munhoz</span> <span>Gabriel C. Zacharias</span></div>
-    </footer>     
+        <div class="authors"><span>@2022 by: </span><span>Willian P. Munhoz</span> <span>Gabriel C. Zacharias</span>
+        </div>
+    </footer>
 </body>
 
 </html>
