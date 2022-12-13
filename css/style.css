@@ -188,13 +188,38 @@ h2 {
     color: gray;
 }
 
-.google-map {
-    width: 90vw;
-    min-width: 300px;
-    min-height: 300px;
+.contactUs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flow
+}
+
+.contactUs .google-map {
+    width: 50vw;
+    height: 20vw;
+    /*min-width: 300px;
+    min-height: 300px;*/
     border: 1px solid black;
     background-color: var(--main_Light);
-    margin-bottom: 20px;
+    margin: 0px;
+    /*width: 30%;
+    min-width: 250px;
+    display: inline-block;*/
+    vertical-align: top;
+}
+
+.contactUs .contact-text {
+    /*width: 30%;
+    min-width: 250px;
+    display: inline-block;*/
+    width: 90vw;
+
+    vertical-align: top;
 }
 
 footer {
