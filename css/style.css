@@ -63,6 +63,7 @@ body {
     flex-direction: row;
     justify-items: center;
     align-items: center;
+    overflow-y: hidden;
     height: 50px;
     width: 100vw;
     padding: 15px 0 15px 0;
