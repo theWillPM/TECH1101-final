@@ -19,7 +19,9 @@ function update(val, i){
 function updateTotal () {  
     totalPrice = 0;
   priceArray.forEach(element => {
+    if(element.innerHTML!='0')
     totalPrice += parseFloat(element.innerHTML.slice(1));
+    else totalPrice += parseFloat(element.innerHTML.slice(0));
     document.getElementById('total').innerHTML =  "$" + totalPrice.toFixed(2);
 });   
 }
