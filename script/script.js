@@ -52,7 +52,7 @@ function animateImages() {
     });
     currentImageFocus++;
     
-    if (currentImageFocus == 6) {
+    if (currentImageFocus == 7) {
         currentImageFocus = 0;
         imagesArray.forEach(element => {
             element.style.transform = "translateX(0px)";
