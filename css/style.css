@@ -202,10 +202,27 @@ footer span {
     font-size: 0.8em;
 }
 
-
 .authors {
     display: flex;
     flex-direction: column;
+}
+
+#floating-nav {
+    width: 40px;
+    height: 40px;
+    background: var(--main_Dark);
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.8em;
+    box-shadow: 2px 2px 5px var(--main_Dark);
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    transition: 0.4s;
+    justify-content: center;
+    padding: 4px;
 }
 
 @media screen and (max-width: 800px) {
