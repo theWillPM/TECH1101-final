@@ -1,3 +1,98 @@
 main {
     padding: 0 20px 10px;
 }
+
+/* ONLINE ESTIMATOR: */
+.hidden-price {
+    display: none;
+}
+
+.plus-materials {
+    font-size: 0.8em;
+    color: gray;
+}
+
+#online-estimate {
+    display: flex;
+    border: none;
+    border-spacing: 0px;
+    max-width: 90vw;
+}
+
+#services-header {
+    border-top-left-radius: 50px;
+}
+
+#subtotal-header {
+    border-top-right-radius: 20px;
+    padding-right: 15px;
+}
+
+tr,
+th,
+td {
+    border: 1px solid var(--main_Medium);
+    padding: 4px;
+    background-color: var(--tertiary_Light);
+}
+
+th {
+    background-color: var(--main_Dark);
+    color: white;
+}
+
+.table-row {
+    border: 2px solid var(--main_Medium);
+    border-radius: 50px;
+    background-image: linear-gradient( white, var(--main_Light));
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 2em;
+}   
+
+.user-input-quantity {
+    max-width: 108px;
+}
+
+.user-input-quantity input {
+    max-width: 100px;
+}
+
+#total {
+    text-align: center;
+    background-color: var(--main_Light);
+    padding: 0 10px;
+    font-size: 1.5em;
+}
+
+#total-caption {
+    border-radius: 0;
+    border-bottom-left-radius: 50px;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+/* CONTACT US: */
+.google-map {
+    width: 90vw;
+    min-width: 300px;
+    min-height: 300px;
+    border: 1px solid black;
+    background-color: var(--main_Light);
+    margin-bottom: 20px;
+}
+
+li {
+    list-style-position: inside;
+    list-style-type: none;
+    border: 1px solid var(--tertiary_Dark);
+    border-radius: 50px;
+    background-color: white;
+    margin-bottom: 5px;
+    box-shadow: -5px 2px 10px -5px var(--main_Dark);
+    border-bottom: 2px solid var(--main_Dark);
+    padding: 5px;
+}

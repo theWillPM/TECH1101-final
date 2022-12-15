@@ -3,9 +3,19 @@ let hamburguerMenuContent = document.getElementById("menu");
 let itemQuantitiesArray = document.getElementsByClassName("user-input-quantity");
 let priceArray = document.querySelectorAll('.subtotal');
 let totalPrice = 0;
+let imagesArray = document.querySelectorAll('.images-carousel');
+let imagesContainer = document.getElementsByClassName("images-container");
+let currentImageFocus = 1;
+let imagesWidthArray;
 
 //Thank you, @Erik from StackOverflow for this solution: (https://stackoverflow.com/a/37335153) (Research by Willian)
 Array.prototype.forEach.call(itemQuantitiesArray, update);
+
+/* imagesArray.forEach(element => {
+    imagesWidthArray[currentImageFocus] = element.width;
+}); */
+
+
 
 function update(val, i){
     val.addEventListener('input', function(){
@@ -35,3 +45,19 @@ function closeMenu() {
     hamburguerMenuContent.style.width = "0px";
     console.log("Closed");
 }
+
+function animateImages() {
+    imagesArray.forEach(element => {
+        element.style.transform = "translateX(-"+currentImageFocus*630+"px)";
+    });
+    currentImageFocus++;
+    
+    if (currentImageFocus == 6) {
+        currentImageFocus = 0;
+        imagesArray.forEach(element => {
+            element.style.transform = "translateX(0px)";
+        });
+    }
+
+}
+setInterval(animateImages, 2000);
